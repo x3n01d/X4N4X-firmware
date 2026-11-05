@@ -1,7 +1,7 @@
 # X4N4X
 
 Custom firmware for the **Quansheng UV-K1 / UV-K5 V3** (PY32F071), built on top of the
-**F4HWN** custom firmware (v6.3.0).
+**F4HWN** custom firmware.
 
 X4N4X keeps the full F4HWN feature set and adds a firmware-level multiboot, a cleaner
 SysInfo screen (no QR codes) and X4N4X branding.
