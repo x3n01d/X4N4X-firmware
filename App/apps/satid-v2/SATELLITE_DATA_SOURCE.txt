@@ -1,0 +1,4 @@
+Satellite data: AMSAT active frequency database
+https://satdb.amsat.org/
+https://github.com/palewire/amateur-satellite-database/blob/main/data/amsat-active-frequencies.csv
+SatNOGS-derived data is marked CC BY-SA 4.0 by the database.

@@ -1,0 +1,87 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /tmp/ccc53LgP.o
+ .data          0x00000000        0x0 /tmp/ccc53LgP.o
+ .bss           0x00000000        0x0 /tmp/ccc53LgP.o
+ .comment       0x00000000       0x46 /tmp/ccc53LgP.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+APP              0x20000280         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x20000280                        APP_VMA = 0x20000280
+LOAD /tmp/ccc53LgP.o
+LOAD /opt/toolchain/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/libgcc.a
+                0x20000280                        APP_VMA = DEFINED (APP_VMA)?APP_VMA:0x20000280
+                0x00001000                        APP_LENGTH = 0x1000
+
+.app            0x20000280      0x4dc
+ *(.text.entry)
+ .text.entry    0x20000280      0x3dc /tmp/ccc53LgP.o
+                0x20000280                app_main
+ *(.text .text.*)
+ .text.rd32     0x2000065c       0x16 /tmp/ccc53LgP.o
+ *fill*         0x20000672        0x2 
+ .text.wait_release
+                0x20000674       0x30 /tmp/ccc53LgP.o
+ *(.rodata .rodata.*)
+ .rodata.entry.str1.1
+                0x200006a4       0x71 /tmp/ccc53LgP.o
+                                 0x51 (size before relaxing)
+ .rodata.str1.1
+                0x20000715       0x20 /tmp/ccc53LgP.o
+ *fill*         0x20000715        0x3 
+ .rodata.PROTO_NAME
+                0x20000718       0x14 /tmp/ccc53LgP.o
+ .rodata.MOD_NAME
+                0x2000072c        0xc /tmp/ccc53LgP.o
+                0x20000738                        . = ALIGN (0x4)
+ *(.data .data.*)
+                0x20000738                        . = ALIGN (0x4)
+                0x20000738                        __app_bss_start = .
+ *(.bss .bss.* COMMON)
+ .bss.g         0x20000738       0x24 /tmp/ccc53LgP.o
+                0x2000075c                        . = ALIGN (0x4)
+                0x2000075c                        __app_bss_end = .
+                0x2000075c                        __app_end = .
+                0x00000001                        ASSERT ((__app_end <= (APP_VMA + APP_LENGTH)), Satellite ID overlay app overflows the 4 KiB overlay)
+
+.glue_7         0x2000075c        0x0
+ .glue_7        0x2000075c        0x0 linker stubs
+
+.glue_7t        0x2000075c        0x0
+ .glue_7t       0x2000075c        0x0 linker stubs
+
+.vfp11_veneer   0x2000075c        0x0
+ .vfp11_veneer  0x2000075c        0x0 linker stubs
+
+.v4_bx          0x2000075c        0x0
+ .v4_bx         0x2000075c        0x0 linker stubs
+
+.iplt           0x2000075c        0x0
+ .iplt          0x2000075c        0x0 /tmp/ccc53LgP.o
+
+.igot.plt       0x2000075c        0x0
+ .igot.plt      0x2000075c        0x0 /tmp/ccc53LgP.o
+
+.rel.dyn        0x2000075c        0x0
+ .rel.iplt      0x2000075c        0x0 /tmp/ccc53LgP.o
+
+/DISCARD/
+ *(.ARM.exidx*)
+ *(.ARM.extab*)
+ *(.eh_frame*)
+ *(.comment)
+ *(.note.*)
+OUTPUT(satid.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x2c
+ .ARM.attributes
+                0x00000000       0x2c /tmp/ccc53LgP.o
