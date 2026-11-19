@@ -1,0 +1,235 @@
+
+=== 🚀 Building preset: Service ===
+---------------------------------------------
+/opt/toolchain/bin/arm-none-eabi-gcc
+arm-none-eabi-gcc (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 13.3.1 20240614
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Release"
+  CMAKE_TOOLCHAIN_FILE:FILEPATH="/src/cmake/gcc-arm-none-eabi.cmake"
+  DEV:BOOL="FALSE"
+  EDITION_STRING="Service"
+  ENABLE_AGC_SHOW_DATA:BOOL="FALSE"
+  ENABLE_AIRCOPY:BOOL="TRUE"
+  ENABLE_AIRCOPY_FLASH:BOOL="TRUE"
+  ENABLE_AIRCOPY_UART:BOOL="TRUE"
+  ENABLE_AUDIO_BAR:BOOL="TRUE"
+  ENABLE_BIG_FREQ:BOOL="TRUE"
+  ENABLE_BOOT_BEEPS:BOOL="FALSE"
+  ENABLE_BYP_RAW_DEMODULATORS:BOOL="FALSE"
+  ENABLE_COPY_CHAN_TO_VFO:BOOL="TRUE"
+  ENABLE_CTCSS_TAIL_PHASE_SHIFT:BOOL="FALSE"
+  ENABLE_CUSTOM_MENU_LAYOUT:BOOL="TRUE"
+  ENABLE_DTMF_CALLING:BOOL="FALSE"
+  ENABLE_EXTRA_UART_CMD:BOOL="FALSE"
+  ENABLE_FASTER_CHANNEL_SCAN:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_ACTION_PICKER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_AUDIO:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_AUDIO_SCOPE:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_BEACON:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_BEAM:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_CA:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_CHARGING_C:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_CTR:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_DEBUG:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_EXT_FLASH_RW:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_FOXHUNT:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_FULL_WATCH:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_FW_ASSETS:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_GAME:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_GMRS_FRS_MURS:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_INV:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_K5VIEWER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_LOGO:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_LOGO_SAV:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MEM:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MENU_CAT:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MULTIBOOT:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MULTIBOOT_HOT_CFG:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MULTIBOOT_OVERLAY:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_NARROWER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_OVERLAY_APPS:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_OVERLAY_BEAM:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_OVERLAY_INFO:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_PMR:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_QRCODE:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_RESCUE_OPS:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_RESET_VFO:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RESUME_STATE:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RXTX_LOG:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RXTX_LOG_K5VIEWER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RXTX_LOG_WRAP:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_RX_TX_TIMER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SCAN_FASTER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SCAN_PROGRESS:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SCAN_RSSI:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SCAN_SUBAUDIBLE:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SET_FNT:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SLEEP:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SPECTRUM:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_VOL:BOOL="TRUE"
+  ENABLE_FLASHLIGHT:BOOL="TRUE"
+  ENABLE_FMRADIO:BOOL="TRUE"
+  ENABLE_F_CAL_MENU:BOOL="FALSE"
+  ENABLE_KEEP_MEM_NAME:BOOL="TRUE"
+  ENABLE_LTO:BOOL="TRUE"
+  ENABLE_NOAA:BOOL="FALSE"
+  ENABLE_NO_CODE_SCAN_TIMEOUT:BOOL="FALSE"
+  ENABLE_NO_HEAP:BOOL="TRUE"
+  ENABLE_PWRON_PASSWORD:BOOL="FALSE"
+  ENABLE_REDUCE_LOW_MID_TX_POWER:BOOL="FALSE"
+  ENABLE_REVERSE_BAT_SYMBOL:BOOL="FALSE"
+  ENABLE_RSSI_BAR:BOOL="TRUE"
+  ENABLE_SCAN_RANGES:BOOL="TRUE"
+  ENABLE_SHOW_CHARGE_LEVEL:BOOL="FALSE"
+  ENABLE_SMALL_BOLD:BOOL="TRUE"
+  ENABLE_SPECTRUM:BOOL="TRUE"
+  ENABLE_SQUELCH_MORE_SENSITIVE:BOOL="TRUE"
+  ENABLE_SWD:BOOL="TRUE"
+  ENABLE_TX1750:BOOL="TRUE"
+  ENABLE_UART:BOOL="TRUE"
+  ENABLE_UART_RW_BK_REGS:BOOL="FALSE"
+  ENABLE_USB:BOOL="TRUE"
+  ENABLE_VOICE:BOOL="FALSE"
+  ENABLE_VOX:BOOL="TRUE"
+  ENABLE_WIDE_RX:BOOL="TRUE"
+  TARGET="x4n4x.service"
+  VERSION_STRING_1="v0.22"
+  VERSION_STRING_2="v7.0.0"
+
+-- The C compiler identification is GNU 13.3.1
+-- The CXX compiler identification is GNU 13.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/toolchain/bin/arm-none-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/toolchain/bin/arm-none-eabi-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Build type: Release
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/toolchain/bin/arm-none-eabi-gcc
+EXE_NAME = x4n4x.service
+Development build = FALSE
+-- Found Python3: /usr/local/bin/python3 (found version "3.10.22") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /src/build/Service
+[1/89] Validating minimal printf formats
+Minimal printf formats: OK
+[2/89] Building ASM object CMakeFiles/x4n4x.service.dir/Core/startup_py32f071xx.s.obj
+[3/89] Building C object CMakeFiles/x4n4x.service.dir/Core/Src/system_py32f071.c.obj
+[4/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_pwr.c.obj
+[5/89] Building C object CMakeFiles/x4n4x.service.dir/Core/Src/main.c.obj
+[6/89] Building C object CMakeFiles/x4n4x.service.dir/Core/Src/py32f071_it.c.obj
+[7/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_rcc.c.obj
+[8/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_adc.c.obj
+[9/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_dma.c.obj
+[10/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_crc.c.obj
+[11/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_comp.c.obj
+[12/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_gpio.c.obj
+[13/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_utils.c.obj
+[14/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_exti.c.obj
+[15/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_dac.c.obj
+[16/89] Building ASM object CMakeFiles/x4n4x.service.dir/App/compact_div.S.obj
+[17/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_lptim.c.obj
+[18/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_i2c.c.obj
+[19/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_spi.c.obj
+[20/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_usart.c.obj
+[21/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/gpio.c.obj
+[22/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_tim.c.obj
+[23/89] Building C object CMakeFiles/x4n4x.service.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_rtc.c.obj
+[24/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/backlight.c.obj
+[25/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/i2c.c.obj
+[26/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/keyboard.c.obj
+[27/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/system.c.obj
+[28/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/systick.c.obj
+[29/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/bk4829.c.obj
+[30/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/action.c.obj
+[31/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/dtmf.c.obj
+[32/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/st7565.c.obj
+[33/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/py25q16.c.obj
+[34/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/chFrScanner.c.obj
+[35/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/common.c.obj
+[36/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/generic.c.obj
+[37/89] Building C object CMakeFiles/x4n4x.service.dir/App/bitmaps.c.obj
+[38/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/main.c.obj
+[39/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/scanner.c.obj
+[40/89] Building C object CMakeFiles/x4n4x.service.dir/App/audio.c.obj
+[41/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/app.c.obj
+[42/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/menu.c.obj
+[43/89] Building C object CMakeFiles/x4n4x.service.dir/App/board.c.obj
+[44/89] Building C object CMakeFiles/x4n4x.service.dir/App/dcs.c.obj
+[45/89] Building C object CMakeFiles/x4n4x.service.dir/App/frequencies.c.obj
+[46/89] Building C object CMakeFiles/x4n4x.service.dir/App/helper/battery.c.obj
+[47/89] Building C object CMakeFiles/x4n4x.service.dir/App/font.c.obj
+[48/89] Building C object CMakeFiles/x4n4x.service.dir/App/helper/boot.c.obj
+[49/89] Building C object CMakeFiles/x4n4x.service.dir/App/scheduler.c.obj
+[50/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/battery.c.obj
+[51/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/scanner.c.obj
+[52/89] Building C object CMakeFiles/x4n4x.service.dir/App/functions.c.obj
+[53/89] Building C object CMakeFiles/x4n4x.service.dir/App/misc.c.obj
+[54/89] Building C object CMakeFiles/x4n4x.service.dir/App/radio.c.obj
+[55/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/inputbox.c.obj
+[56/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/helper.c.obj
+[57/89] Building C object CMakeFiles/x4n4x.service.dir/App/settings.c.obj
+[58/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/ui.c.obj
+[59/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/status.c.obj
+[60/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/welcome.c.obj
+[61/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/menu.c.obj
+[62/89] Building C object CMakeFiles/x4n4x.service.dir/App/version.c.obj
+[63/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/crc.c.obj
+[64/89] Building C object CMakeFiles/x4n4x.service.dir/App/external/printf/printf.c.obj
+[65/89] Building C object CMakeFiles/x4n4x.service.dir/App/main.c.obj
+[66/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/vcp.c.obj
+[67/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/eeprom_compat.c.obj
+[68/89] Building C object CMakeFiles/x4n4x.service.dir/App/usb/usbd_cdc_if.c.obj
+[69/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/uart.c.obj
+[70/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/main.c.obj
+[71/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/fmradio.c.obj
+[72/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/bk1080.c.obj
+[73/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/fm.c.obj
+[74/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/aircopy.c.obj
+[75/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/flashlight.c.obj
+[76/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/uart.c.obj
+[77/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/beam.c.obj
+[78/89] Building C object CMakeFiles/x4n4x.service.dir/App/k5viewer.c.obj
+[79/89] Building C object CMakeFiles/x4n4x.service.dir/App/font_alt.c.obj
+[80/89] Building C object CMakeFiles/x4n4x.service.dir/App/ui/multiboot.c.obj
+[81/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/aircopy.c.obj
+[82/89] Building C object CMakeFiles/x4n4x.service.dir/App/fw_assets.c.obj
+[83/89] Building C object CMakeFiles/x4n4x.service.dir/Middlewares/CherryUSB/core/usbd_core.c.obj
+[84/89] Building C object CMakeFiles/x4n4x.service.dir/Middlewares/CherryUSB/class/cdc/usbd_cdc.c.obj
+[85/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/rxtx_log.c.obj
+[86/89] Building C object CMakeFiles/x4n4x.service.dir/App/app/spectrum.c.obj
+[87/89] Building C object CMakeFiles/x4n4x.service.dir/Middlewares/CherryUSB/port/usb_dc_py32.c.obj
+[88/89] Building C object CMakeFiles/x4n4x.service.dir/App/driver/mb_flash.c.obj
+[89/89] Linking C executable x4n4x.service.elf
+-- Multiboot RAM stub isolation OK: 888 bytes, 83 checked branches
+Firmware image 109836 B, asset pack 8852 B (7532 B free in the zone)
+✅ Done: Service
+
+💾 Flash (limit: 120832 B / 118.00 KiB)
+Preset     |   Used (B) | Used (KiB) |   Free (B) | Free (KiB) |   Usage
+-----------+------------+------------+------------+------------+--------
+Service    |     109836 |     107.26 |      10996 |      10.74 |  90.90%
+
+🧠 RAM (limit: 16384 B / 16.00 KiB)
+Preset     |   Used (B) | Used (KiB) |   Free (B) | Free (KiB) |   Usage
+-----------+------------+------------+------------+------------+--------
+Service    |      12784 |      12.48 |       3600 |       3.52 |  78.03%
+
+🗄️ Firmware assets (limit: 16384 B / 16.00 KiB per slot)
+Preset     |   Used (B) | Used (KiB) |   Free (B) | Free (KiB) |   Usage
+-----------+------------+------------+------------+------------+--------
+Service    |       8852 |       8.64 |       7532 |       7.36 |  54.03%
+
+🎉 Preset Service built successfully!

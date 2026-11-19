@@ -1,5 +1,5 @@
-/* Copyright 2026 x3n01d
- * https://github.com/armel
+/* Copyright 2026 Armel X4N4X
+ * https://github.com/x3n01d/X4N4X-firmware
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -571,6 +571,7 @@ void app_main(const app_api_t *api){
         if (!g.held) { capture(); analyze(); g.dirty = 1; }
         else api->delay_ms(40);
         keys();
+        api->cfg_save(g.set, CFG_LEN);           /* each pass, a change only: kept across a switch-off */
         /* the speaker follows key 2 and, in STD, the squelch: in RAW the
          * squelch bit stays closed on a strong signal (APRS heard on PA4,
          * the speaker silent), so RAW plays all, as the radiosonde apps */
@@ -586,5 +587,4 @@ void app_main(const app_api_t *api){
     api->af_capture_close();
     api->set_af(APP_AF_MUTE);
     api->audio_path(false);
-    api->cfg_save(g.set, CFG_LEN);
 }

@@ -28,7 +28,7 @@ on the speaker.
 - Raycasting method after Lode Vandevenne's tutorial,
   <https://lodev.org/cgtutor/raycasting.html>, reimplemented in fixed point
   (no code copied).
-- Build script, link script, asset builder and the overlay API are x3n01d
+- Build script, link script, asset builder and the overlay API are Armel
   X4N4X's; the sine-quadrant scheme comes from his Cube3D app and the help
   page layout from CW Keyer.
 - Tone register values from the firmware's BK4829 driver

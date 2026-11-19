@@ -39,10 +39,10 @@ UI = [
 MENU = ["Call", "SSID", "Lat", "Lon", "Path", "Symbol", "Comm."]
 PATHS = ["DIRECT", "WIDE1-1", "WIDE1-1,WIDE2-1", "ARISS"]   # APRS TX path order
 PRESETS = [
-    ("PORTABLE", "Portable, UV-K5/K1 X4N4X firmware (github.com/armel)"),
-    ("MOBILE", "Mobile, UV-K5/K1 X4N4X firmware (github.com/armel)"),
-    ("QRP", "QRP, UV-K5/K1 X4N4X firmware (github.com/armel)"),
-    ("TEST", "APRS test, UV-K5/K1 X4N4X firmware (github.com/armel)"),
+    ("PORTABLE", "Portable, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)"),
+    ("MOBILE", "Mobile, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)"),
+    ("QRP", "QRP, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)"),
+    ("TEST", "APRS test, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)"),
 ]
 PRESET_NAMES = ["CUSTOM"] + [name for name, _ in PRESETS]
 

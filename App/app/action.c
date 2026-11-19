@@ -32,9 +32,6 @@
     #include "apps/app_overlay.h"
 #endif
 #include "app/scanner.h"
-#ifdef ENABLE_SPECTRUM
-    #include "app/spectrum.h"
-#endif
 #include "audio.h"
 #ifdef ENABLE_FMRADIO_EMBEDDED
     #include "driver/bk1080.h"
@@ -78,9 +75,6 @@ static void ACTION_1750(void);
 #endif
 
 inline static void ACTION_ScanRestart() { ACTION_Scan(true); };
-#ifdef ENABLE_SPECTRUM
-static void ACTION_Spectrum(void) { APP_RunSpectrum(); }
-#endif
 
 void (*const action_opt_table[ACTION_OPT_LEN])(void) = {
     [ACTION_OPT_NONE] = &FUNCTION_NOP,
@@ -142,9 +136,6 @@ void (*const action_opt_table[ACTION_OPT_LEN])(void) = {
 #ifdef ENABLE_FEAT_X4N4X_OVERLAY_APPS
     [ACTION_OPT_TONECALL] = &ACTION_ToneCall,
 #endif
-#ifdef ENABLE_SPECTRUM
-    [ACTION_OPT_SPECTRUM] = &ACTION_Spectrum,
-#endif
 };
 
 static_assert(ARRAY_SIZE(action_opt_table) == ACTION_OPT_LEN);
@@ -155,7 +146,6 @@ static_assert(ACTION_OPT_REMOVE_OFFSET == 21);
 static_assert(ACTION_OPT_FOXHUNT == 22);
 static_assert(ACTION_OPT_BEACON == 23);
 static_assert(ACTION_OPT_TONECALL == 24);
-static_assert(ACTION_OPT_SPECTRUM == 25);
 
 bool ACTION_IsAvailable(uint8_t action)
 {

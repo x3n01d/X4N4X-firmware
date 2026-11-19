@@ -1,5 +1,5 @@
-/* Copyright 2026 x3n01d
- * https://github.com/armel
+/* Copyright 2026 Armel X4N4X
+ * https://github.com/x3n01d/X4N4X-firmware
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -408,6 +408,9 @@ void app_main(const app_api_t *api)
 
     while (g.running) {
         poll_key();
+        /* Staged after every key, unchanged bytes cost nothing: the resident
+         * logs each change, so the resistor survives a switch-off too. */
+        A->cfg_save(&g.type, CFG_LEN);
         if (!g.running)
             break;
 
@@ -423,6 +426,4 @@ void app_main(const app_api_t *api)
         A->backlight_update();
         A->delay_ms(TICK_MS);
     }
-
-    A->cfg_save(&g.type, CFG_LEN);   /* staged: committed after the app returns */
 }

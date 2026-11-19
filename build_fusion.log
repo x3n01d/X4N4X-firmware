@@ -1,0 +1,234 @@
+
+=== 🚀 Building preset: Fusion ===
+---------------------------------------------
+/opt/toolchain/bin/arm-none-eabi-gcc
+arm-none-eabi-gcc (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 13.3.1 20240614
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Release"
+  CMAKE_TOOLCHAIN_FILE:FILEPATH="/src/cmake/gcc-arm-none-eabi.cmake"
+  DEV:BOOL="FALSE"
+  EDITION_STRING="X4N4X"
+  ENABLE_AGC_SHOW_DATA:BOOL="FALSE"
+  ENABLE_AIRCOPY:BOOL="FALSE"
+  ENABLE_AIRCOPY_FLASH:BOOL="FALSE"
+  ENABLE_AIRCOPY_UART:BOOL="FALSE"
+  ENABLE_AUDIO_BAR:BOOL="TRUE"
+  ENABLE_BIG_FREQ:BOOL="TRUE"
+  ENABLE_BOOT_BEEPS:BOOL="FALSE"
+  ENABLE_BYP_RAW_DEMODULATORS:BOOL="FALSE"
+  ENABLE_COPY_CHAN_TO_VFO:BOOL="TRUE"
+  ENABLE_CTCSS_TAIL_PHASE_SHIFT:BOOL="FALSE"
+  ENABLE_CUSTOM_MENU_LAYOUT:BOOL="TRUE"
+  ENABLE_DTMF_CALLING:BOOL="FALSE"
+  ENABLE_EXTRA_UART_CMD:BOOL="FALSE"
+  ENABLE_FASTER_CHANNEL_SCAN:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_ACTION_PICKER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_AUDIO:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_AUDIO_SCOPE:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_BEACON:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_BEAM:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_CA:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_CHARGING_C:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_CTR:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_DEBUG:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_EXT_FLASH_RW:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_FOXHUNT:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_FULL_WATCH:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_FW_ASSETS:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_GAME:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_GMRS_FRS_MURS:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_INV:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_K5VIEWER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_LOGO:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_LOGO_SAV:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MEM:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MENU_CAT:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MULTIBOOT:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MULTIBOOT_HOT_CFG:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_MULTIBOOT_OVERLAY:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_NARROWER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_OVERLAY_APPS:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_OVERLAY_BEAM:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_OVERLAY_INFO:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_PMR:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_QRCODE:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_RESCUE_OPS:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RESET_VFO:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RESUME_STATE:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RXTX_LOG:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RXTX_LOG_K5VIEWER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_RXTX_LOG_WRAP:BOOL="FALSE"
+  ENABLE_FEAT_X4N4X_RX_TX_TIMER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SCAN_FASTER:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SCAN_PROGRESS:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SCAN_RSSI:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SCAN_SUBAUDIBLE:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SET_FNT:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SLEEP:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_SPECTRUM:BOOL="TRUE"
+  ENABLE_FEAT_X4N4X_VOL:BOOL="TRUE"
+  ENABLE_FLASHLIGHT:BOOL="TRUE"
+  ENABLE_FMRADIO:BOOL="TRUE"
+  ENABLE_F_CAL_MENU:BOOL="FALSE"
+  ENABLE_KEEP_MEM_NAME:BOOL="TRUE"
+  ENABLE_LTO:BOOL="TRUE"
+  ENABLE_NOAA:BOOL="FALSE"
+  ENABLE_NO_CODE_SCAN_TIMEOUT:BOOL="FALSE"
+  ENABLE_NO_HEAP:BOOL="TRUE"
+  ENABLE_PWRON_PASSWORD:BOOL="FALSE"
+  ENABLE_REDUCE_LOW_MID_TX_POWER:BOOL="FALSE"
+  ENABLE_REVERSE_BAT_SYMBOL:BOOL="FALSE"
+  ENABLE_RSSI_BAR:BOOL="TRUE"
+  ENABLE_SCAN_RANGES:BOOL="TRUE"
+  ENABLE_SHOW_CHARGE_LEVEL:BOOL="FALSE"
+  ENABLE_SMALL_BOLD:BOOL="TRUE"
+  ENABLE_SPECTRUM:BOOL="TRUE"
+  ENABLE_SQUELCH_MORE_SENSITIVE:BOOL="TRUE"
+  ENABLE_SWD:BOOL="TRUE"
+  ENABLE_TX1750:BOOL="TRUE"
+  ENABLE_UART:BOOL="TRUE"
+  ENABLE_UART_RW_BK_REGS:BOOL="FALSE"
+  ENABLE_USB:BOOL="TRUE"
+  ENABLE_VOICE:BOOL="FALSE"
+  ENABLE_VOX:BOOL="TRUE"
+  ENABLE_WIDE_RX:BOOL="TRUE"
+  TARGET="x4n4x.fusion"
+  VERSION_STRING_1="v0.22"
+  VERSION_STRING_2="v7.0.0"
+
+-- The C compiler identification is GNU 13.3.1
+-- The CXX compiler identification is GNU 13.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/toolchain/bin/arm-none-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/toolchain/bin/arm-none-eabi-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Build type: Release
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/toolchain/bin/arm-none-eabi-gcc
+EXE_NAME = x4n4x.fusion
+Development build = FALSE
+-- Found Python3: /usr/local/bin/python3 (found version "3.10.22") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /src/build/Fusion
+[1/88] Validating minimal printf formats
+Minimal printf formats: OK
+[2/88] Building ASM object CMakeFiles/x4n4x.fusion.dir/Core/startup_py32f071xx.s.obj
+[3/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_rcc.c.obj
+[4/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_pwr.c.obj
+[5/88] Building C object CMakeFiles/x4n4x.fusion.dir/Core/Src/system_py32f071.c.obj
+[6/88] Building C object CMakeFiles/x4n4x.fusion.dir/Core/Src/main.c.obj
+[7/88] Building C object CMakeFiles/x4n4x.fusion.dir/Core/Src/py32f071_it.c.obj
+[8/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_gpio.c.obj
+[9/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_dma.c.obj
+[10/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_utils.c.obj
+[11/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_adc.c.obj
+[12/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_crc.c.obj
+[13/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_exti.c.obj
+[14/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_comp.c.obj
+[15/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_dac.c.obj
+[16/88] Building ASM object CMakeFiles/x4n4x.fusion.dir/App/compact_div.S.obj
+[17/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_i2c.c.obj
+[18/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_lptim.c.obj
+[19/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_rtc.c.obj
+[20/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_usart.c.obj
+[21/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/gpio.c.obj
+[22/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/system.c.obj
+[23/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_tim.c.obj
+[24/88] Building C object CMakeFiles/x4n4x.fusion.dir/Drivers/PY32F071_HAL_Driver/Src/py32f071_ll_spi.c.obj
+[25/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/i2c.c.obj
+[26/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/backlight.c.obj
+[27/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/systick.c.obj
+[28/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/py25q16.c.obj
+[29/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/keyboard.c.obj
+[30/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/st7565.c.obj
+[31/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/action.c.obj
+[32/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/common.c.obj
+[33/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/bk4829.c.obj
+[34/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/generic.c.obj
+[35/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/dtmf.c.obj
+[36/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/chFrScanner.c.obj
+[37/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/audio.c.obj
+[38/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/bitmaps.c.obj
+[39/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/dcs.c.obj
+[40/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/scanner.c.obj
+[41/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/frequencies.c.obj
+[42/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/main.c.obj
+[43/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/font.c.obj
+[44/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/app.c.obj
+[45/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/board.c.obj
+[46/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/scheduler.c.obj
+[47/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/misc.c.obj
+[48/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/menu.c.obj
+[49/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/helper/boot.c.obj
+[50/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/helper/battery.c.obj
+[51/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/functions.c.obj
+[52/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/battery.c.obj
+[53/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/inputbox.c.obj
+[54/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/scanner.c.obj
+[55/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/radio.c.obj
+[56/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/helper.c.obj
+[57/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/version.c.obj
+[58/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/ui.c.obj
+[59/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/crc.c.obj
+[60/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/welcome.c.obj
+[61/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/external/printf/printf.c.obj
+[62/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/settings.c.obj
+[63/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/status.c.obj
+[64/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/eeprom_compat.c.obj
+[65/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/menu.c.obj
+[66/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/vcp.c.obj
+[67/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/main.c.obj
+[68/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/uart.c.obj
+[69/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/bk1080.c.obj
+[70/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/usb/usbd_cdc_if.c.obj
+[71/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/main.c.obj
+[72/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/flashlight.c.obj
+[73/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/stack_usage.c.obj
+[74/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/uart.c.obj
+[75/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/fm.c.obj
+[76/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/fw_assets.c.obj
+[77/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/k5viewer.c.obj
+[78/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/font_alt.c.obj
+[79/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/ui/multiboot.c.obj
+[80/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/apps/app_menu.c.obj
+[81/88] Building C object CMakeFiles/x4n4x.fusion.dir/Middlewares/CherryUSB/class/cdc/usbd_cdc.c.obj
+[82/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/spectrum.c.obj
+[83/88] Building C object CMakeFiles/x4n4x.fusion.dir/Middlewares/CherryUSB/port/usb_dc_py32.c.obj
+[84/88] Building C object CMakeFiles/x4n4x.fusion.dir/Middlewares/CherryUSB/core/usbd_core.c.obj
+[85/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/apps/app_overlay.c.obj
+[86/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/app/rxtx_log.c.obj
+[87/88] Building C object CMakeFiles/x4n4x.fusion.dir/App/driver/mb_flash.c.obj
+[88/88] Linking C executable x4n4x.fusion.elf
+-- Multiboot RAM stub isolation OK: 888 bytes, 83 checked branches
+Firmware image 108044 B, asset pack 8916 B (7468 B free in the zone)
+✅ Done: Fusion
+
+💾 Flash (limit: 120832 B / 118.00 KiB)
+Preset     |   Used (B) | Used (KiB) |   Free (B) | Free (KiB) |   Usage
+-----------+------------+------------+------------+------------+--------
+Fusion     |     108044 |     105.51 |      12788 |      12.49 |  89.42%
+
+🧠 RAM (limit: 16384 B / 16.00 KiB)
+Preset     |   Used (B) | Used (KiB) |   Free (B) | Free (KiB) |   Usage
+-----------+------------+------------+------------+------------+--------
+Fusion     |      12528 |      12.23 |       3856 |       3.77 |  76.46%
+
+🗄️ Firmware assets (limit: 16384 B / 16.00 KiB per slot)
+Preset     |   Used (B) | Used (KiB) |   Free (B) | Free (KiB) |   Usage
+-----------+------------+------------+------------+------------+--------
+Fusion     |       8916 |       8.71 |       7468 |       7.29 |  54.42%
+
+🎉 Preset Fusion built successfully!

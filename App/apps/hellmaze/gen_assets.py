@@ -12,7 +12,7 @@
 #         per row an ink u16 then an opaque-mask u16, bit 15 = leftmost pixel.
 #         '#' black, 'o' white, '.' transparent.
 #
-# Built with x3n01d's shared asset builder (../app_assets.py). The maze,
+# Built with Armel X4N4X's shared asset builder (../app_assets.py). The maze,
 # the demon and the gun are original drawings.
 #
 #   ./gen_assets.py hellmaze_assets.bin hellmaze_assets.h

@@ -1,4 +1,4 @@
-/* Copyright 2026 x3n01d
+/* Copyright 2026 Armel X4N4X
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

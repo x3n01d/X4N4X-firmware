@@ -48,7 +48,7 @@
  * https://lodev.org/cgtutor/raycasting.html, reimplemented here in fixed
  * point; no code was copied from it. The dither is the classic 4x4 Bayer
  * ordered-dither matrix. The sine quadrant with symmetry is the scheme of
- * x3n01d's Cube3D app. The tone register values (REG_50 mute and
+ * Armel X4N4X's Cube3D app. The tone register values (REG_50 mute and
  * unmute words, the REG_71 Hz scale) come from App/driver/bk4829.c
  * (BK4819_EnterTxMute / ExitTxMute, scale_freq; Dual Tachyon, muzkr). The
  * help page capsules follow CW Keyer's layout. The maze, sprites and gun are

@@ -40,6 +40,7 @@
     #include "driver/mb_flash.h"
     #include "ui/multiboot.h"
 #endif
+#include "font.h"
 #include "frequencies.h"
 #ifdef ENABLE_FEAT_X4N4X_MULTIBOOT_HOT_CFG
     #include "functions.h"
@@ -472,10 +473,6 @@ int MENU_GetLimits(uint8_t menu_id, int32_t *pMin, int32_t *pMax)
             //*pMin = 0;
             *pMax = ARRAY_SIZE(gSubMenu_SET_PTT) - 1;
             break;
-        case MENU_SET_STYLE:
-            //*pMin = 0;
-            *pMax = ARRAY_SIZE(gSubMenu_SET_STYLE) - 1;
-            break;
         case MENU_TX_LOCK:
         #ifdef ENABLE_FEAT_X4N4X_INV
         case MENU_SET_INV:
@@ -492,6 +489,11 @@ int MENU_GetLimits(uint8_t menu_id, int32_t *pMin, int32_t *pMax)
                 *pMax = 0;
             else
                 *pMax = ARRAY_SIZE(gSubMenu_SET_AUD_FM) - 1;
+            break;
+        case MENU_SET_RXG:
+            // forced ON by the RX expander: ON is the only choice
+            *pMin = RADIO_IsRxCompanderOn(gTxVfo) ? 1 : 0;
+            *pMax = ARRAY_SIZE(gSubMenu_OFF_ON) - 1;
             break;
         #endif
         #ifdef ENABLE_FEAT_X4N4X_NARROWER
@@ -957,9 +959,6 @@ void MENU_AcceptSetting(void)
         case MENU_SET_INV:
             gSetting_set_inv = gSubMenuSelection;
             break;
-        case MENU_SET_STYLE:
-            gSetting_menu_style = gSubMenuSelection;
-            break;
         #ifdef ENABLE_FEAT_X4N4X_AUDIO
         case MENU_SET_AUD:
             if(gTxVfo->Modulation == MODULATION_AM)
@@ -967,6 +966,11 @@ void MENU_AcceptSetting(void)
             else if (gTxVfo->Modulation == MODULATION_FM)
                 gSetting_set_audio_fm = gSubMenuSelection;
 
+            RADIO_SetModulation(gTxVfo->Modulation);
+            break;
+        case MENU_SET_RXG:
+            if (!RADIO_IsRxCompanderOn(gTxVfo))   // forced ON: keep the user choice
+                gSetting_set_rxg = gSubMenuSelection;
             RADIO_SetModulation(gTxVfo->Modulation);
             break;
         #endif
@@ -1330,9 +1334,6 @@ void MENU_ShowCurrentSetting(void)
         case MENU_SET_INV:
             gSubMenuSelection = gSetting_set_inv;
             break;
-        case MENU_SET_STYLE:
-            gSubMenuSelection = gSetting_menu_style;
-            break;
         #ifdef ENABLE_FEAT_X4N4X_AUDIO
         case MENU_SET_AUD:
             if(gTxVfo->Modulation == MODULATION_AM)
@@ -1341,6 +1342,9 @@ void MENU_ShowCurrentSetting(void)
                 gSubMenuSelection = 0;
             else
                 gSubMenuSelection = gSetting_set_audio_fm;
+            break;
+        case MENU_SET_RXG:
+            gSubMenuSelection = RADIO_IsRxCompanderOn(gTxVfo) ? 1 : gSetting_set_rxg;
             break;
         #endif
         #ifdef ENABLE_FEAT_X4N4X_NARROWER

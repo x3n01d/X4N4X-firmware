@@ -33,7 +33,7 @@ ARISS = "ARISS"                            # last path: the ISS digipeater alias
 PATHS = ["DIRECT", "WIDE1-1", "WIDE1-1,2-1", ARISS]   # shown on the radio, per path
 LAT, LON = "4850.90N", "00216.25E"         # default position: DDMM.hhN, DDDMM.hhE
 SYMBOL = "/["                              # table, code: '[' = person
-COMMENT = "Portable, UV-K5/K1 X4N4X firmware (github.com/armel)"
+COMMENT = "Portable, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)"
 # info field: "!" + LAT + SYMBOL[0] + LON + SYMBOL[1] + COMMENT
 
 TITLE = "APRS TX"

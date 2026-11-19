@@ -37,10 +37,10 @@ def main():
     menu_names = [b"Call", b"SSID", b"Lat", b"Lon", b"Path", b"Symbol", b"Comm."]
     path_names = [b"DIRECT", b"WIDE1-1", b"WIDE1-1,WIDE2-1", b"ARISS"]
     presets = [
-        b"Portable, UV-K5/K1 X4N4X firmware (github.com/armel)",
-        b"Mobile, UV-K5/K1 X4N4X firmware (github.com/armel)",
-        b"QRP, UV-K5/K1 X4N4X firmware (github.com/armel)",
-        b"APRS test, UV-K5/K1 X4N4X firmware (github.com/armel)",
+        b"Portable, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)",
+        b"Mobile, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)",
+        b"QRP, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)",
+        b"APRS test, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)",
     ]
     descriptor = blob[:defs["CFG_PROXY_LEN"]]
     magic, target, offset, length, reserved, target_magic = struct.unpack(
@@ -83,7 +83,7 @@ def main():
         defs["COMMENT_LIMIT"] == 64,
         len(blob) < 3840,
         "--exit-main" not in open(BUILD).read(),
-        len(profile("Portable, UV-K5/K1 X4N4X firmware (github.com/armel)")) == length,
+        len(profile("Portable, UV-K5/K1 X4N4X firmware (github.com/x3n01d/X4N4X-firmware)")) == length,
         profile("X" * 89)[4] == 89,
         profile("X")[5:8] == bytes([0x17, 5, 0]),
         profile("X", path=3)[5] == 0x37,

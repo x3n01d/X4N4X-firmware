@@ -1,5 +1,5 @@
-/* Copyright 2026 x3n01d
- * https://github.com/armel
+/* Copyright 2026 Armel X4N4X
+ * https://github.com/x3n01d/X4N4X-firmware
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -136,6 +136,13 @@ static void draw_hud(void)
     A->print_inverse(s, 2, 0, true, true, end);
 }
 
+/* Staged, written by the resident on a change only. */
+static void save_cfg(void)
+{
+    const config_t cfg = { CFG_MAGIC, g.scene, g.mode, g.speed, g.flags };
+    A->cfg_save((const uint8_t *)&cfg, sizeof(cfg));
+}
+
 __attribute__((section(".text.entry"), used))
 void app_main(const app_api_t *api)
 {
@@ -227,6 +234,7 @@ void app_main(const app_api_t *api)
                     break;
                 default: break;
             }
+            save_cfg();   /* after each key: kept across a switch-off */
         }
         prevKey = key;
         if (!running)
@@ -316,10 +324,5 @@ void app_main(const app_api_t *api)
         A->backlight_update();
     }
 
-    cfg.magic = CFG_MAGIC;
-    cfg.scene = g.scene;
-    cfg.mode  = g.mode;
-    cfg.speed = g.speed;
-    cfg.flags = g.flags;
-    A->cfg_save((const uint8_t *)&cfg, sizeof(cfg));
+    save_cfg();       /* the scene the auto cycle reached */
 }

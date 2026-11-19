@@ -239,6 +239,15 @@ void FUNCTION_Select(FUNCTION_Type_t Function)
         UI_DisplayStatus();
     }
 
+    if ((Function == FUNCTION_RECEIVE || Function == FUNCTION_MONITOR ||
+         Function == FUNCTION_INCOMING) && gRxVfo != NULL) {
+        /* X4N4X: RX LED colour - 70cm yellow (red+green), other bands green */
+        const uint32_t ledF = gRxVfo->pRX->Frequency;
+        const bool ledYellow = (ledF >= 40000000u && ledF <= 47000000u);
+        BK4819_ToggleGpioOut(BK4819_GPIO5_PIN1_RED, ledYellow);
+        BK4819_ToggleGpioOut(BK4819_GPIO6_PIN2_GREEN, true);
+    }
+
     /*
     switch (Function) {
         case FUNCTION_FOREGROUND:

@@ -1,5 +1,5 @@
-/* Copyright 2024 x3n01d
- * https://github.com/armel
+/* Copyright 2024 Armel X4N4X
+ * https://github.com/x3n01d/X4N4X-firmware
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,13 @@
 #ifndef K5VIEWER_H
 #define K5VIEWER_H
 
+#include <stdbool.h>
+#include <stdint.h>
+
 void K5VIEWER_Update(bool force);
 void K5VIEWER_ParseInput(void);
 bool K5VIEWER_HasPendingStateChange(void);
+bool K5VIEWER_SetGps(int32_t lat_cas, int32_t lon_cas);
+bool K5VIEWER_GetGps(int32_t *lat_cas, int32_t *lon_cas);
 
 #endif

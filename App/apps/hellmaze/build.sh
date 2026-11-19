@@ -4,7 +4,7 @@
 # derived from the directory name; only APP_NAME - the human label baked into
 # the 64-byte blob header - is per-app. The .app file is named after it (spaces
 # stripped), so "Broadcast FM" -> BroadcastFM.app.
-# Same build script as the other overlay apps (x3n01d's template).
+# Same build script as the other overlay apps (Armel X4N4X's template).
 set -euo pipefail
 
 APP="$(basename "$PWD")"            # breakout, foxhunt, beacon, fm, ...
@@ -39,5 +39,5 @@ BYTES=$(wc -c < "${APP}.bin")
 if [ "$BYTES" -gt 4096 ]; then
   printf '\r  🚨 %-13s OVERFLOWS 4 KiB (%d B)     \n' "$APP_NAME" "$BYTES"; exit 1
 fi
-printf '\r  ✅ %-13s %4d B  (%d%% of 4 KiB)  ->  %s.app   \n' \
+printf '\r  ✅ %-13s %4d B  (%3d%% of 4 KiB)  ->  %s.app   \n' \
        "$APP_NAME" "$BYTES" "$(( BYTES * 100 / 4096 ))" "$OUT"

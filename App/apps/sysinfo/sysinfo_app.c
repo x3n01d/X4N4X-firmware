@@ -1,4 +1,4 @@
-/* Copyright 2026 x3n01d
+/* Copyright 2026 Armel X4N4X
  * Licensed under the Apache License, Version 2.0.
  *
  * Labs system information overlay. Static UI strings live in the app assets;
@@ -671,11 +671,7 @@ static void draw_row(uint16_t row, uint8_t line, char *text, bool close_top)
     }
 
     if ((definition & 0xF0u) == 0x40u) {
-        const uint16_t qr = (definition & 0x08u) ? QR_WIKI : QR_CODE;
-        const uint8_t page = definition & 0x07u;
-        A->asset_read(qr + (uint16_t)page * QR_WIDTH,
-                      &A->fb[line][QR_X], QR_WIDTH);
-        return;
+        return;   /* X4N4X: QR codes removed */
     }
 
     char *value = text + 12u;

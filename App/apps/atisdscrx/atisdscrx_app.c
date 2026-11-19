@@ -1,7 +1,7 @@
 /* Copyright 2026 Johan Denoyer F4WAT
  * https://github.com/jdenoy
  *
- * Based on the ATIS RX overlay app by x3n01d (its receive path).
+ * Based on the ATIS RX overlay app by Armel X4N4X (its receive path).
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -538,6 +538,7 @@ static void handleKeys(void){
     if(key==APP_KEY_EXIT) g.running=false;
     else if(key==APP_KEY_2){ g.count=g.cur=0; g.nOk=0; }
     else if(key==APP_KEY_1) g.spk^=1u;
+    g.A->cfg_save(&g.spk,1);     /* staged after each key: kept across a switch-off */
 }
 
 /* ---- keys, alert and screen, between calls ---- */
@@ -632,5 +633,4 @@ void app_main(const app_api_t *api){
     api->af_capture_close();
     api->set_af(APP_AF_MUTE);
     api->audio_path(false);
-    api->cfg_save(&g.spk,1);
 }

@@ -11,7 +11,7 @@ firmware:
 
   https://github.com/egzumer/uv-k5-firmware-custom
 
-This product includes work developed by x3n01d and contributors
+This product includes work developed by Armel / X4N4X and contributors
 for the X4N4X firmware projects, including the X4N4X Edition Fusion
 port for UV-K1 and UV-K5 V3 radios:
 
@@ -19,7 +19,7 @@ port for UV-K1 and UV-K5 V3 radios:
   https://github.com/armel/uv-k1-k5v3-firmware-custom
 
 The UV-K1 and UV-K5 V3 port is the result of joint work by muzkr and
-x3n01d.
+Armel / X4N4X.
 
 Additional attribution notices
 ------------------------------
@@ -32,7 +32,7 @@ others:
   fagci
   Egzumer
   muzkr
-  x3n01d
+  Armel / X4N4X
 
 Project-specific derived components
 -----------------------------------
@@ -60,6 +60,14 @@ Paland, licensed under the MIT License. Its license is included at:
 
   App/external/printf/LICENSE
 
+The QR Map overlay app's QR Code encoder is derived from the QR Code
+generator library by Project Nayuki, licensed under the MIT License.
+Its copyright and permission notice are included at the top of:
+
+  App/apps/qrmap/qr.c
+
+  https://www.nayuki.io/page/qr-code-generator-library
+
 License and endorsement notice
 ------------------------------
 
@@ -73,5 +81,5 @@ conditions on license copies, modified-file notices, retained copyright
 and attribution notices, and NOTICE files.
 
 Attribution in this file does not imply endorsement by Dual Tachyon,
-OneOfEleven, fagci, Egzumer, muzkr, x3n01d or any other
+OneOfEleven, fagci, Egzumer, muzkr, Armel / X4N4X or any other
 contributor.

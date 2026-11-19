@@ -1,5 +1,5 @@
-/* Copyright 2026 x3n01d
- * https://github.com/armel
+/* Copyright 2026 Armel X4N4X
+ * https://github.com/x3n01d/X4N4X-firmware
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -520,6 +520,7 @@ static void handleKeys(void){
         g.count=g.cur=g.top=g.lim=0;
         g.syncs=g.crcFails=g.parityFails=g.corrected=g.nOk=0;
     }
+    g.A->cfg_save(&g.spk,2);     /* staged after each key: kept across a switch-off */
 }
 
 static void house(void){
@@ -618,5 +619,4 @@ void app_main(const app_api_t *api){
     api->af_capture_close();
     api->set_af(APP_AF_MUTE);
     api->audio_path(false);
-    api->cfg_save(&g.spk,2);
 }

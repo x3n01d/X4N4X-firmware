@@ -1,5 +1,5 @@
 /* Copyright 2026 Sarijen     https://github.com/Sarijen
- *                x3n01d https://github.com/armel
+ *                Armel X4N4X https://github.com/x3n01d/X4N4X-firmware
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

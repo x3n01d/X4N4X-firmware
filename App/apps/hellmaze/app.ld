@@ -1,4 +1,4 @@
-/* Overlay-app link script (POC), as in every overlay app (x3n01d).
+/* Overlay-app link script (POC), as in every overlay app (Armel X4N4X).
  *
  * The blob is linked to run at the PY25Q16 sector-cache overlay VMA (shared with
  * the multiboot RAM stub — never both active at once). Code + rodata + data +

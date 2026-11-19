@@ -1,4 +1,4 @@
-/* Copyright 2026 x3n01d
+/* Copyright 2026 Armel X4N4X
  * Licensed under the Apache License, Version 2.0.
  *
  * BEAM overlay app.  Packet version 2 remains wire-compatible with the
